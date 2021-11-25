@@ -12,7 +12,7 @@ inserendo nell’ordine: nome, cognome e età. */
 
 
 //[1]
-let studente = {
+/* let studente = {
 
     nome: "Gianpietro" ,
 
@@ -25,10 +25,10 @@ let studente = {
 for(let key in studente){
     
     alert(key + ": " + studente[key]);
-}
+} */
 
 //[2]
-let studenti = [
+/* let studenti = [
 
     {
         nome: "Zeferino  " ,
@@ -63,4 +63,18 @@ for(let key in studenti){
     alert("Nome: " + studenti[key].nome);
     alert("Cognome: " + studenti[key].cognome);
 
-}
+} */
+
+//[3]
+
+let nome = prompt("Dimmi un nome:");
+let cognome = prompt("Dimmi un cognome:");
+let eta = prompt("Dimmi un'etá:");
+
+let studente = {};
+
+studente.nome = nome;
+studente.cognome = cognome;
+studente.eta = eta;
+
+console.log(studente);
