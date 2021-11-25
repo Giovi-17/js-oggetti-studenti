@@ -16,7 +16,7 @@ let studente = {
 
     nome: "Gianpietro" ,
 
-    congnome: "Angioi",
+    cognome: "Angioi",
 
     eta: 21
 
@@ -25,4 +25,42 @@ let studente = {
 for(let key in studente){
     
     alert(key + ": " + studente[key]);
+}
+
+//[2]
+let studenti = [
+
+    {
+        nome: "Zeferino  " ,
+
+        cognome: "Scasso",
+    
+        eta: 24
+    },
+
+    {
+        nome: "Arnaldina " ,
+
+        cognome: "Mengaldo",
+    
+        eta: 27
+    },
+
+    {
+        nome: "Leardino  " ,
+
+        cognome: "Vitulano",
+    
+        eta: 28
+    }
+
+];
+
+for(let key in studenti){
+    let num = parseInt(key) + 1;
+
+    alert("Studente: " + [num]);
+    alert("Nome: " + studenti[key].nome);
+    alert("Cognome: " + studenti[key].cognome);
+
 }
