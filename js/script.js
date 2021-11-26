@@ -28,10 +28,10 @@ for(let key in studente){
 } */
 
 //[2]
-let studenti = [
+/* let studenti = [
 
     {
-        nome: "Zeferino  " ,
+        nome: "Zeferino" ,
 
         cognome: "Scasso",
     
@@ -39,7 +39,7 @@ let studenti = [
     },
 
     {
-        nome: "Arnaldina " ,
+        nome: "Arnaldina" ,
 
         cognome: "Mengaldo",
     
@@ -47,7 +47,7 @@ let studenti = [
     },
 
     {
-        nome: "Leardino  " ,
+        nome: "Leardino" ,
 
         cognome: "Vitulano",
     
@@ -57,24 +57,29 @@ let studenti = [
 ];
 
 for( let i = 0; i < studenti.length; i++ ){
-    let num = parseInt(i) + 1;
+    let num = i + 1;
+    let thisStudent = studenti[i];
 
     alert("Studente: " + [num]);
-    alert("Nome: " + studenti[i].nome);
-    alert("Cognome: " + studenti[i].cognome);
+    alert("Nome: " + thisStudent.nome + " --- " + "Cognome: " + thisStudent.cognome);
 
-}
+} */
 
 //[3]
 
-/* let nome = prompt("Dimmi un nome:");
+let nome = prompt("Dimmi un nome:");
 let cognome = prompt("Dimmi un cognome:");
 let eta = prompt("Dimmi un'etá:");
 
-let studente = {};
+let studente = {
 
-studente.nome = nome;
-studente.cognome = cognome;
-studente.eta = eta;
+    nome: nome,
 
-console.log(studente); */
+    cognome: cognome,
+
+    eta: eta
+
+};
+
+
+console.log(studente);
